@@ -1,6 +1,7 @@
 'use client';
-import Logo  from './assets/logo.svg'
+import Logo from './assets/logo.svg';
 import styles from './styles.module.css';
+
 const navItems = [
   {
     title: 'Обо мне',
@@ -28,7 +29,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__wrapper}>
         <a className={styles['header__logo-link']} onClick={scrollToTop}>
-          <Logo/>
+          <Logo />
         </a>
         <nav className={styles['header__navigation']}>
           <ul className={styles['header__menu-list']}>

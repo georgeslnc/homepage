@@ -23,6 +23,7 @@
     "import/prefer-default-export": "off",
     "react/function-component-definition": "off",
     "@typescript-eslint/dot-notation": "off",
+    "react/no-array-index-key": "off",
     "object-curly-spacing": [
       "error",
       "always",
