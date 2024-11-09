@@ -1,0 +1,42 @@
+.header {
+  position: sticky;
+  top: 0px;
+  background: #1c1c1e33;
+  backdrop-filter: blur(40px);
+}
+
+.header__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 50px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation {
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 28px;
+}
+
+.header__menu-item {
+}
+
+.header__menu-link {
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--font-color-white-secondary);
+  transition: var(--transition-default);
+  &:hover {
+    color: var(--font-color-white-primary);
+  }
+}
+
+.header__logo-link {
+  cursor: pointer;
+}

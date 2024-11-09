@@ -1,11 +1,17 @@
 'use client';
-import { useTheme } from '@/app/context';
+import styles from './styles.module.css';
+import { HeroBlock } from './HeroBlock';
+import { Skils } from './Skils';
+import { Experience } from './Experience';
+import { AboutMe } from './AboutMe';
 
 export const Main = () => {
-  const theme = useTheme();
   return (
-    <main>
-      <h1>ahah</h1>
-    </main>
+    <div className={styles['main__wrapper']}>
+      <HeroBlock />
+      <AboutMe />
+      <Skils />
+      <Experience />
+    </div>
   );
 };
