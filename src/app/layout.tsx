@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/app/context';
-import { Main } from '@/app/components';
+import { Footer, Header, Main } from '@/app/components';
 
 const roboto = Roboto({
   weight: '400',
@@ -24,9 +24,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body>
+      <body className={roboto.className}>
         <ThemeProvider>
-          <Main />
+          <Header />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

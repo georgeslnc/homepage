@@ -22,6 +22,7 @@
     "lines-around-directive": "off",
     "import/prefer-default-export": "off",
     "react/function-component-definition": "off",
+    "@typescript-eslint/dot-notation": "off",
     "object-curly-spacing": [
       "error",
       "always",

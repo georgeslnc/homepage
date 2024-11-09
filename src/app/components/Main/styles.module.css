@@ -1,0 +1,52 @@
+.main__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0 50px;
+  margin-top: 156px;
+  & .hero-block__title {
+    color: var(--font-color-white-primary);
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      color: red;
+    }
+  }
+  & .hero-block__text {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--font-color-white-secondary);
+  }
+  & .hero-block__text-highlight {
+    color: var(--font-color-white-primary);
+  }
+  & .hero-block__button {
+    padding: 10px 36px;
+    background-color: #2c2c2e;
+    color: var(--font-color-white-primary);
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    border-radius: 12px;
+    transition: var(--transition-default);
+    &:hover {
+      background-color: #ffffff1f;
+    }
+    &:active {
+      background-color: #ffffff29;
+    }
+  }
+}
+
+.about-me {
+}
+
+.experience {
+}

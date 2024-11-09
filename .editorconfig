@@ -1,0 +1,13 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# root is used to specify that this is the top-level EditorConfig file
+root = true
+
+# CSS files settings
+[*.{css,scss,less}]
+indent_style = space
+indent_size = 2
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
