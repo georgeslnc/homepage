@@ -45,6 +45,69 @@
   }
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 0 50px;
+  & .skills__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+    text-align: end;
+    max-width: 244px;
+    & .skills__title {
+      color: var(--font-color-white-primary);
+      font-size: 34px;
+      line-height: 41px;
+      font-weight: 700;
+    }
+    & .skills__text {
+      color: var(--font-color-white-secondary);
+      font-size: 17px;
+      line-height: 22px;
+      & .skills__text-highlight {
+        color: var(--font-color-white-primary);
+      }
+    }
+  }
+  & .skills__list {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-auto-rows: auto;
+    gap: 20px;
+    & .skills__list-item {
+      padding: 10px 22px;
+      background-color: #1c1c1e;
+      border-radius: 12px;
+      &:hover .skills__list-card .skills__list-image {
+        filter: brightness(1);
+      }
+      &:hover .skills__list-card .skills__list-title {
+        color: var(--font-color-white-primary);
+      }
+      & .skills__list-card {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        align-items: center;
+        & .skills__list-image {
+          width: 136px;
+          height: 136px;
+          filter: brightness(0.3);
+        }
+        & .skills__list-title {
+          color: var(--font-color-white-secondary);
+          font-size: 11px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+}
+
 .about-me {
 }
 

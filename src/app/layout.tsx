@@ -13,6 +13,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'Homepage',
   description: 'My homepage',
+  openGraph: {
+    title: 'Frontend George',
+    description: 'Blablabla',
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
