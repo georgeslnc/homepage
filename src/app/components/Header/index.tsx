@@ -5,17 +5,22 @@ import styles from './styles.module.css';
 const navItems = [
   {
     title: 'Обо мне',
+    id: '#about-me',
   },
   {
-    title: 'Навыки',
+    title: 'Стек',
+    id: '#skills',
   },
   {
-    title: 'Опыт',
+    title: 'Опыт работы',
+    id: '#experience',
   },
   {
     title: 'Контакты',
+    id: '#contacts',
   },
 ];
+const HEADER_HEIGHT = 64;
 
 export const Header = () => {
   const scrollToTop = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -24,6 +29,18 @@ export const Header = () => {
       top: 0,
       behavior: 'smooth',
     });
+  };
+
+  const scrollToSection = (id: string) => {
+    const element = document.querySelector(id);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top: elementPosition - HEADER_HEIGHT,
+        behavior: 'smooth',
+      });
+    }
   };
   return (
     <header className={styles.header}>
@@ -35,7 +52,9 @@ export const Header = () => {
           <ul className={styles['header__menu-list']}>
             {navItems.map((item, idx) => (
               <li className={styles['header__menu-item']} key={idx}>
-                <a className={styles['header__menu-link']}>{item.title}</a>
+                <a className={styles['header__menu-link']} onClick={() => scrollToSection(item.id)}>
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
