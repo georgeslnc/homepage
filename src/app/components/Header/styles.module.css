@@ -1,6 +1,7 @@
 .header {
   position: sticky;
   top: 0px;
+  z-index: 10;
   background: #1c1c1e33;
   backdrop-filter: blur(40px);
 }
